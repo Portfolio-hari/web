@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+
+  <!-- Google Fonts: Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Apply Montserrat Globally -->
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="neural-bg"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-container">
+        <!--  Logo -->
+        <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2" />
+        <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2" />
+        <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2" />
+        <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2" />
+
+        <!-- Connections -->
+        <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6" />
+        <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6" />
+        <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
+        <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
+
+        <!-- Center node -->
+        <circle cx="50" cy="50" r="5" fill="#00ffff" />
+        <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6" />
+        <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6" />
+        <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
+        <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6" />
+      </a>
+
+      <div class="mobile-menu-toggle" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#home"><b>HOME</b></a></li>
+          <li><a href="#about"><b>ABOUT </b></a></li>
+          <li><a href="#skills"><b>SKILLS</b></a></li>
+          <li><a href="#projects"><b>PROJECTS</b></a></li>
+          <li><a href="#contact"><b>Education</b></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="HARI HARA SUDAN">HARI HARA SUDAN</h1>
+      <p class="subtitle"><b>AI & Machine Learning Enthusiast</b></p>
+    </div>
+    <a href="#about" class="scroll-btn">
+      <div class="scroll-btn-inner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        </svg>
+      </div>
+    </a>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2 class="section-title">ABOUT ME</h2>
+    <br>
+    <br>
+      <div class="about-content">
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+          AI & Machine Learning enthusiast with hands-on experience in Python, PyTorch, and data-driven projects.
+          Skilled in building intelligent systems such as chatbots, text-to-image generators, and text summarization
+          tools. Strong problem-solving mindset and ability to analyze and interpret data for meaningful insights. Eager
+          to learn, contribute, and create innovative solutions in a collaborative environment.
+        </p>
+        <div class="social-links" style="display: flex; gap: 15px; align-items: center; color: white;">
+
+          <!-- Email -->
+          <a href="mailto:hariharasudan.dev@gmail.com" aria-label="Email" style="color: white;">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M12 13.065L0 6V18a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6l-12 7.065zM12 11L24 4H0l12 7z" />
+            </svg>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+918072285502" aria-label="Phone" style="color: white;">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path
+                d="M22.54 16.88l-5.27-.6a1.998 1.998 0 0 0-1.82.57l-2.83 2.83a16.077 16.077 0 0 1-7.27-7.27l2.83-2.83a2 2 0 0 0 .57-1.82l-.6-5.27A2.003 2.003 0 0 0 5.15.05H2.05A2.05 2.05 0 0 0 0 2.1C0 13.25 10.75 24 21.9 24a2.05 2.05 0 0 0 2.05-2.05v-3.1c0-1.03-.78-1.9-1.41-2.0z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/hari-hara-sudan" target="_blank" aria-label="LinkedIn"
+            style="color: white;">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/hariharasudan3" target="_blank" aria-label="GitHub" style="color: white;">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
+            C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729
+            1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 
+            3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+            0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+            0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 
+            1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 
+            3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
+            1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 
+            5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 
+            3.286 0 .315.21.69.825.57C20.565 21.795 24 
+            17.295 24 12c0-6.63-5.37-12-12-12" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="fade-in">
+    <h2 class="section-title">SKILLS</h2>
+    <br>
+    <br>
+    <div class="skills-container">
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span><b>Python</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <span><b>Java</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium">
+        <span><b>Selenium</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <span><b>MySQL</b></span>
+      </div>
+
+      <div class="skill-node flask">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+        <span><b>Flask</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <span><b>Git</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+        <span><b>NumPy</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+        <span><b>Jupyter</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <span><b>html5</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <span><b>css3</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          alt="JavaScript">
+        <span class="smallest"><b>JavaScript</b></span>
+        <style>
+          .smallest {
+            font-size: 0.8rem;
+            /* adjust size as needed */
+
+          }
+        </style>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+        <span><b>pandas</b></span>
+      </div>
+
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+        <span><b>pytorch</b></span>
+      </div>
+      <div class="skill-node">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+          alt="TensorFlow">
+        <span class="smallest"><b>tensorflow</b></span>
+        <style>
+          .smallest {
+            font-size: 0.8rem;
+            /* adjust size as needed */
+
+          }
+        </style>
+      </div>
+
+    </div>
+    <style>
+      .skill-node {
+        font-family: 'Audiowide', sans-serif;
+        width: 160px;
+        height: 70px;
+        background: var(--bg-glass);
+        border: 2px solid var(--primary);
+        border-radius: 13px;
+        /* rectangle with rounded corners */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px;
+        /* fix icon touching edges */
+      }
+
+      .skill-node img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+      }
+
+      .smallest {
+        font-size: 0.8rem;
+        /* adjust size as needed */
+
+      }
+
+      /* Flask icon (black → white) */
+      .skill-node.flask img {
+        filter: brightness(0) invert(1);
+      }
+
+      .skill-node.mysql img {
+        filter: brightness(0) invert(1);
+      }
+    </style>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --bg-glass: rgba(255, 255, 255, 0.05);
+    }
+
+    /* GENERAL BODY */
+    body {
+      font-family: 'Audiowide', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* SECTION TITLE */
+    h2.section-title {
+      text-align: center;
+      margin: 50px 0 30px;
+      font-size: 2rem;
+    }
+
+    /* PROJECTS GRID */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px 25px;
+      /* reduced spacing */
+    }
+
+    /* PROJECT WRAPPER */
+    .project-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* GLASS CARD */
+    .glass-card {
+      width: 100%;
+      background: var(--bg-glass);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 15px;
+      /* reduced */
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 350px;
+      /* smaller height */
+      max-height: 350px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    /* PROJECT IMAGE */
+    .project-image img {
+      width: 80%;
+      max-width: 220px;
+      /* reduced size */
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project-image img:hover {
+      transform: scale(1.05);
+    }
+
+    /* PROJECT TITLE & DESCRIPTION */
+    .project-card h3 {
+      margin: 8px 0 6px;
+      font-size: 1.2rem;
+      /* slightly smaller */
+      text-align: center;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      /* slightly smaller */
+      color: #ddd;
+      margin-bottom: 8px;
+    }
+
+    /* TECH ICONS */
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+
+    .tech-icons img {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      border-radius: 50%;
+      background: white;
+      transition: transform 0.2s ease;
+    }
+
+    .tech-icons img:hover {
+      transform: scale(1.15);
+    }
+
+    /* VIEW CODE BUTTON */
+    .view-code-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .view-code-btn {
+      text-decoration: none;
+      background: white;
+      color: var(--primary);
+      padding: 8px 22px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .view-code-btn:hover {
+      background-color: #ddd;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px 0;
+      }
+    }
+  </style>
+
+  <section id="projects">
+    <h2 class="section-title">PROJECTS</h2>
+    <br>
+    <br>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-wrapper">
+        <div class="glass-card project-card">
+          <div class="project-image">
+            <img src="images/ml.png" alt="ML Text-to-Image">
+          </div>
+          <h3 style="color:#1e90ff;"><b>Text-to-Image</b></h3>
+          <p>Implemented text-to-image generation using Stable Diffusion, enabling users to generate high-quality
+            images.</p>
+          <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+          </div>
+        </div>
+        <div class="view-code-container">
+          <a href="https://github.com/hariharasudan3/ML-Text2Art" target="_blank" class="view-code-btn">View Code</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-wrapper">
+        <div class="glass-card project-card">
+          <div class="project-image">
+            <img src="images/tn.png" alt="Text Normalization">
+          </div>
+          <h3 style="color:#ff6347;"><b>Text Normalization</b></h3>
+          <p>Normalize text by converting it to lowercase and removing punctuation for streamlined analysis.</p>
+          <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          </div>
+        </div>
+        <div class="view-code-container">
+          <a href="https://github.com/hariharasudan3/Text-Normalization-NLP" target="_blank" class="view-code-btn">View
+            Code</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-wrapper">
+        <div class="glass-card project-card">
+          <div class="project-image">
+            <img src="images/ts.png" alt="Text Summarization">
+          </div>
+          <h3 style="color:#32cd32;"><b>Text Summarization</b></h3>
+          <p>Implemented document upload for summarization, sentiment analysis, and word cloud generation.</p>
+          <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          </div>
+        </div>
+        <div class="view-code-container">
+          <a href="https://github.com/hariharasudan3/Text-Summarization-NLP" target="_blank" class="view-code-btn">View
+            Code</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-wrapper">
+        <div class="glass-card project-card">
+          <div class="project-image">
+            <img src="images/chatb.png" alt="Chatbot">
+          </div>
+          <h3 style="color:#ff69b4;"><b>Chatbot</b></h3>
+          <p>Developed a chatbot for handling common inquiries, enhancing information accessibility for users.</p>
+          <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          </div>
+        </div>
+        <div class="view-code-container">
+          <a href="https://github.com/hariharasudan3/Chatbot" target="_blank" class="view-code-btn">View Code</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- EDUCATION SECTION -->
+  <section id="contact" class="fade-in">
+    <h2 class="section-title">Education</h2>
+    <br>
+    <br>
+    <div class="education-container">
+      <div class="education-item">
+        <h3>Dr. N.G.P. Arts and Science College, Coimbatore</h3>
+        <p>Bachelor of Science in Artificial Intelligence and Machine Learning<br>2021 - 2024</p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+<style>
+  .education-item {
+    text-align: left;        /* Align all text to the left */
+    padding: 20px 30px;
+    max-width: 600px;
+    margin: 0 auto;          /* Center the card */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.education-item h3,
+.education-item p {
+    margin: 5px 0;           /* Remove extra spacing */
+    padding: 0;              /* Ensure no indent */
+}
+
+  </style>
+  </section>
+
+  <!-- FOOTER -->
+
+<div style="width:100%; background: rgba(0,0,0,0.7); color:#fff; padding:20px 0; text-align:center; font-family:'Montserrat', sans-serif; font-size:1em;">
+    <div style="margin-top:5px;">Made with ❤️ by HARI HARA SUDAN</div>
+</div>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
