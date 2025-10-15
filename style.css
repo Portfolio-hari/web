@@ -965,4 +965,20 @@
                 font-size: 1.5rem;
             }
         }
+/* ===== navbar===== */
+.nav-menu {
+  display: flex !important;
+}
+
+.nav-menu ul {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-toggle {
+  display: none !important;
+}
+
         
