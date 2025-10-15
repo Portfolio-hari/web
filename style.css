@@ -965,20 +965,45 @@
                 font-size: 1.5rem;
             }
         }
-/* ===== navbar===== */
-.nav-menu {
-  display: flex !important;
+/* === Mobile Menu Fix === */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px; /* slightly below navbar */
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    display: none; /* hidden by default */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+  }
+
+  /* When menu is active (clicked) */
+  .nav-menu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
-.nav-menu ul {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-menu-toggle {
-  display: none !important;
-}
-
-        
