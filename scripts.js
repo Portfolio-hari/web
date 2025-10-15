@@ -92,7 +92,23 @@
             mouse.y = e.clientY;
         });
 
-      navMenu.classList.toggle('active');
+      // Mobile menu toggle
+const mobileToggle = document.getElementById('mobile-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+mobileToggle.addEventListener('click', () => {
+  mobileToggle.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileToggle.classList.remove('active');
+    navMenu.classList.remove('active');
+  });
+});
+
 
 
         // Smooth scroll
@@ -125,4 +141,5 @@
             });
 
         });
+
 
