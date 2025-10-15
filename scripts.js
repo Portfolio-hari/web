@@ -92,7 +92,8 @@
             mouse.y = e.clientY;
         });
 
-      
+      navMenu.classList.toggle('active');
+
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -124,3 +125,4 @@
             });
 
         });
+
