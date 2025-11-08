@@ -29,28 +29,6 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-      .paragraph-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-  box-sizing: border-box;
-
-  text-align: justify;      /* justification */
-  text-justify: inter-word; /* better spacing */
-  hyphens: auto;            /* word breaks */
-}
-
-/* Mobile fix: left-align on small screens */
-@media (max-width: 600px) {
-  .paragraph-text {
-    text-align: left;
-  }
-}
-
-
         p {
             line-height: 1.7;
         }
@@ -985,6 +963,7 @@
                 font-size: 1.5rem;
             }
         }
+
 
 
 
